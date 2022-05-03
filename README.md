@@ -1,16 +1,16 @@
 # Chhota Link
 
-Just another link shortner -- https://chhotal.ink
+Just another link shortner -- https://crc32.vercel.app
 
 ## API:
 Shortner:
 
-```https://chhotal.ink/api/get?url=<LONG URL>```
+```https://crc32.vercel.app/api/get?url=<LONG URL>```
 
 Look-up short:
 
-```https://chhotal.ink/api/get?short=<SHORT ID>```
+```https://crc32.vercel.app/api/get?short=<SHORT ID>```
 
 Get recent public links:
 
-```https://chhotal.ink/api/get_list?limit=<INT RESULT LIMIT>```
+```https://crc32.vercel.app/api/get_list?limit=<INT RESULT LIMIT>```

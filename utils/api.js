@@ -1,5 +1,5 @@
 const dev = process.env.NODE_ENV !== 'production';
-const origin = dev ? 'http://localhost:3001' : 'https://chhotal.ink';
+const origin = dev ? 'http://localhost:3001' : 'https://crc32.vercel.app';
 
 export function getByUrl(url, private_ = false) {
     return fetch(`${origin}/api/get?url=${url}&private=${private_ ? "true" : "false"}`)

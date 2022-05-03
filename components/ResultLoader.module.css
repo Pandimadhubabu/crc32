@@ -1,0 +1,34 @@
+
+.main {
+    width: 100%;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #707070;
+}
+
+.main > div:first-child {
+    padding-left: 12px;
+}
+.main > div:empty {
+    display: none;
+}
+
+.loader {
+    display: inline-flex;
+    gap: 12px;
+}
+
+.spinner {
+    animation: spinner 1s steps(12) infinite;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotateZ(0deg)
+    }
+    100% {
+        transform: rotateZ(360deg)
+    }
+}

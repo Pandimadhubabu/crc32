@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', -apple-system, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  user-select: none;
+}
+
+.shimmer {
+    background: -webkit-linear-gradient(0deg, #4743FF, #8B62FF, #4743FF) 0% 0% / 200%;
+    background-clip: text;
+    -webkit-text-fill-color: #0000;
+    font-weight: bold;
+    animation: shimmer 1s 0s linear infinite;
+    animation-play-state: paused;
+}
+*:hover > .shimmer {
+    animation-play-state: running;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 100% 0%
+    }
+    100% {
+        background-position: -100% 0%
+    }
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+}

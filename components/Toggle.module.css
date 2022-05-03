@@ -1,0 +1,53 @@
+.wrapper {
+    display: inline-flex;
+    gap: 12px;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.switch {
+    background: #f0f0f0;
+    border-radius: 1000px;
+    width: 40px;
+    height: 20px;
+    position: relative;
+}
+
+.switch input[type="checkbox"] {
+    visibility: hidden;
+}
+
+.switch > .handle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 150ms 0s ease;
+}
+
+.label {
+    color: #404040;
+    font-size: 14px;
+}
+
+.switch > .handle {
+    background-color: #909090;
+}
+
+:focus > .switch > .handle,
+:active > .switch > .handle {
+    box-shadow: 0 0 0 1.5px #fff, 0 0 0 3px #909090;
+}
+
+[value="true"] > .switch > .handle {
+    background-color: #8B62FF;
+    left: 25px;
+}
+
+[value="true"]:focus > .switch > .handle,
+[value="true"]:active > .switch > .handle {
+    box-shadow: 0 0 0 1.5px #fff, 0 0 0 3px #8B62FF;
+}
